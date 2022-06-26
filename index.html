@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>GameStore</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<header>
+		<div class="container">
+			<div class="row">
+				<nav class="navbar navbar-expand-md">
+					<div class="container-fluid">
+						<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-navigation" aria-controls="main-navigation" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="collapse navbar-collapse" id="main-navigation">
+
+							<div class="col-md-3 col-lg-5">
+								<ul class="nav top-nav--left">
+									<li class="nav-item">
+										<a class="nav-link active" aria-current="page" href="#">Contacts</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#">Sitemap</a>
+									</li>
+								</ul>
+							</div>
+
+							<div class="col-md-9 col-lg-7">	
+								<ul class="nav top-nav--right align-items-center">
+									<li class="nav-item">
+										<a class="nav-link active" aria-current="page" href="#"><i class="bi bi-person"></i>Your account</a>
+									</li>
+									<li class="nav-item dropdown">
+										<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Currency: USD</a>
+										<ul class="dropdown-menu dropdown-menu--top">
+											<li><a class="dropdown-item dropdown-item--top" href="#">USD</a></li>
+											<li><a class="dropdown-item dropdown-item--top" href="#">EUR</a></li>
+											<li><a class="dropdown-item dropdown-item--top" href="#">GBP</a></li>
+										</ul>
+									</li>
+									<li class="nav-item dropdown">
+										<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">English</a>
+										<ul class="dropdown-menu dropdown-menu--top">
+											<li><a class="dropdown-item dropdown-item--top" href="#">Deutsch</a></li>
+											<li><a class="dropdown-item dropdown-item--top" href="#">Русский</a></li>
+										</ul>
+									</li>
+									<li class="nav-item dropdown nav-item--accent">
+										<a class="nav-link dropdown-toggle pt-md-1 pt-xl-2" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"><i class="bi bi-cart"></i><span>Cart</span> empty</a>
+										<ul class="dropdown-menu dropdown-menu--accent">
+											<li><a class="dropdown-item dropdown-item--accent" href="#">Item1</a></li>
+											<li><a class="dropdown-item dropdown-item--accent"" href="#">Item2</a></li>
+											<li><a class="dropdown-item dropdown-item--accent"" href="#">Item3</a></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</div> <!--end of .navbar-collapse-->
+					</div> <!--end of .containe-fluid-->
+					</nav> <!--end of .navbar-->
+				</div> <!-- end of .row-->
+			</div><!--end of container-->
+	</header>
+
+	<div class="container">
+		<div class="top-search-panel d-flex justify-content-between align-items-center">
+			<div class="brand">
+				<h1><span>Games</span>Store</h1>
+			</div>
+			<div class="input-group input-group--top justify-content-end">
+				<input type="text" class="input--search" aria-label="Search" aria-describedby="search">
+				<button class="btn btn-outline-secondary btn-outline-secondary--dark" type="button" id="search"><i class="bi bi-search"></i></button>
+			</div>
+		</div>
+	</div> <!-- end of container-->
+	
+	
+	<main>
+		<div class="container">
+			<section class="products pl-4">
+
+				<div class=" btn-group" role="group" aria-label="Button group for products">
+					<button type="button" class="btn btn-primary active">Accessories</button>
+					<div class="btn-group" role="group">
+						<button id="btnProductsDrop" type="button" class="btn btn-primary dropdown-toggle p-3" data-bs-toggle="dropdown" aria-expanded="false">Games</button>
+						<ul class="dropdown-menu" aria-labelledby="btnProductsDrop">
+							<li><a class="dropdown-item" href="#">Game1</a></li>
+							<li><a class="dropdown-item" href="#">Game2</a></li>
+						</ul>
+					</div>
+					<button type="button" class="btn btn-primary p-3">Gadgets</button>
+					<button type="button" class="btn btn-primary p-3">Hardware</button>
+				</div>
+			</section>
+		</div>
+		<!-- end of .container -->
+			
+		<div class="container">
+			<section class="gadgets">
+				<div class="row">
+					<!-- CAROUSEL -->
+					<div id="carouselGadgets" class="carousel slide col-sm-12 col-md-12 col-lg-8 py-4 px-5" data-bs-ride="false">
+						<div class="carousel-inner">
+
+							<div class="carousel-item active">
+								<img src="img/Carousel_item1.png" class="d-block" alt="XboxOne">
+								<div class="carousel-caption">
+									<h2>Mortal Kombat X Xbox One</h2>
+									<div class="carousel-caption-content d-flex justify-content-between align-items-center py-4">
+										<p class="mb-0">$85,89</p>
+										<a href="#"><i class="bi bi-cart"></i>Shop now!</a>
+									</div>
+								</div>
+							</div>
+							<!-- end of .carousel-item -->
+
+							<div class="carousel-item">
+								<img src="img/Carousel_item1.png" class="d-block" alt="XboxOne">
+								<div class="carousel-caption">
+									<h2>Mortal Kombat X Xbox One</h2>
+									<div class="carousel-caption-content d-flex justify-content-between align-items-center py-4">
+									<p class="mb-0">$85,89</p>
+									<a href="#"><i class="bi bi-cart"></i>Shop now!</a>
+									</div>
+								</div>
+							</div>
+							<!-- end of .carousel-item -->
+	
+							<div class="carousel-item">
+								<img src="img/Carousel_item1.png" class="d-block" alt="XboxOne">
+								<div class="carousel-caption">
+									<h2>Mortal Kombat X Xbox One</h2>
+									<div class="carousel-caption-content d-flex justify-content-between align-items-center py-4">
+										<p class="mb-0">$85,89</p>
+										<a href="#"><i class="bi bi-cart"></i>Shop now!</a>
+									</div>
+								</div>
+							</div>
+							<!-- end of .carousel-item -->	
+						</div>
+						<!-- end of .carousel-inner -->
+	
+						<button class="carousel-control-prev" type="button" data-bs-target="#carouselGadgets" data-bs-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Previous</span>
+						</button>
+	
+						<button class="carousel-control-next" type="button" data-bs-target="#carouselGadgets" data-bs-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Next</span>
+						</button>
+					</div>
+					<!--end of carousel-->
+	
+					<div class="gadget-cards col-12 col-md-12 col-lg-4 py-4">
+						<div class="card card--gadget mt-3 mt-sm-3 mt-md-0 mb-md-3 mb-xl-5 me-md-4 ms-sm-4">
+							<div class="row align-items-center g-0">
+								<div class="col-7">
+									<div class="card-body card-body--gadget p-3">
+										<h4 class="card-title card-title--gadget">PlayStation4</h4>
+										<a href="#"><i class="bi bi-cart"></i>Shop now!</a>
+									</div>
+								</div>
+								<div class="col-5">
+									<img src="img/Play_consoles/PS4.png" class="img-fluid rounded-start" alt="Playstation4">
+								</div>
+							</div>
+						</div>
+						<!-- end of .card--gadget -->
+	
+						<div class="card card--gadget my-3 my-xl-5 me-md-4 ms-sm-4">
+							<div class="row align-items-center g-0">
+								<div class="col-7">
+									<div class="card-body card-body--gadget p-3">
+										<h4 class="card-title card-title--gadget">Xbox One</h4>
+										<a href="#"><i class="bi bi-cart"></i>Shop now!</a>
+									</div>
+								</div>
+								<div class="col-5">
+									<img src="img/Play_consoles/XboxOne.png" class="img-fluid rounded-start" alt="XboxOne">
+								</div>
+							</div>
+						</div>
+						<!-- end of .card--gadget -->
+
+						<div class="card card--gadget my-3 my-xl-5 me-md-4 ms-sm-4">
+							<div class="row align-items-center g-0">
+								<div class="col-7">
+									<div class="card-body card-body--gadget p-3">
+										<h4 class="card-title card-title--gadget">Xbox 360</h4>
+										<a href="#"><i class="bi bi-cart"></i>Shop now!</a>
+									</div>
+								</div>
+								<div class="col-5">
+									<img src="img/Play_consoles/Xbox360.png" class="img-fluid rounded-start" alt="Xbox 360">
+								</div>
+							</div>
+						</div>
+						<!-- end of .card--gadget -->
+					</div>
+					<!-- end of .gadget-cards -->
+				</div>
+				<!-- end of .row -->
+			</section>
+			<!-- end of .gadgets -->
+		</div>
+		<!-- end of .container -->
+			
+
+		<div class="container">
+			<section class="advantages px-4">
+				<div class="row g-0">
+					<div class="col-sm-12 col-md-4">
+						<div class="advantages__card p-4 m-4">
+							<h5><i class="bi bi-chat"></i>Order online</h5>
+							<p>Hours 8am &#8212 11pm</p>
+						</div>
+					</div>
+
+					<div class="col-sm-12 col-md-4">
+						<div class="advantages__card p-4 m-4">
+							<h5><i class="bi bi-truck"></i>Free shipping</h5>
+							<p>On orders over $99</p>
+						</div>
+					</div>
+
+					<div class="col-sm-12 col-md-4">
+						<div class="advantages__card p-4 m-4">
+							<h5><i class="bi bi-star"></i>Sale</h5>
+							<p>Get up to 20% off</p>
+						</div>
+					</div>
+
+				</div>
+			</section>
+		</div>
+
+
+		<div class="container">
+			<section class="games">
+				<div class="games__filter d-flex justify-content-between">
+					<div class="btn-group" role="group" aria-label="button group for games">
+						<button type="button" class="btn btn-primary p-3">New arrivals</button>
+						<button type="button" class="btn btn-primary p-3">Popular</button>
+						<button type="button" class="btn btn-primary p-3">Best sellers</button>
+					</div>
+					<div class="btn-group" role="group" aria-label="button group for pagination">
+						<nav aria-label="gamesSection navigation">
+							<ul class="pagination">
+								<li class="page-item"><a class="page-link" href="#">&lt</a></li>
+								<li class="page-item"><a class="page-link" href="#">&gt</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+				<!-- end of .btn-filter -->
+
+				<div class="games__cards">
+					<div class="row p-4">
+						<div class="col-sm-12 col-md-3 col-lg-3">
+							<div class="card card--games m-4">
+								<img src="img/Games/Game1.png" class="card-img-top" alt="Game1">
+								<div class="card-body card-body--games">
+									<h4>$85.89</h4>
+									<h6>Lorem ipsum dolor sit amet</h6>
+									<p class="card-text card-text--games">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+									<i class="bi bi-star-fill"></i>
+									<i class="bi bi-star-fill"></i>
+									<i class="bi bi-star-fill"></i>
+									<i class="bi bi-star"></i>
+									<i class="bi bi-star"></i>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-sm-12 col-md-3 col-lg-3">
+							<div class="card card--games m-4">
+								<img src="img/Games/Game2.png" class="card-img-top" alt="Game2">
+								<div class="card-body card-body--games">
+									<h4>$85.89</h4>
+									<h6>Lorem ipsum dolor sit amet</h6>
+									<p class="card-text card-text--games">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+									<i class="bi bi-star-fill"></i>
+									<i class="bi bi-star-fill"></i>
+									<i class="bi bi-star-fill"></i>
+									<i class="bi bi-star"></i>
+									<i class="bi bi-star"></i>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-sm-12 col-md-3 col-lg-3">
+							<div class="card card--games m-4">
+								<img src="img/Games/Game3.png" class="card-img-top" alt="Game3">
+								<div class="card-body card-body--games">
+									<h4>$85.89</h4>
+									<h6>Lorem ipsum dolor sit amet</h6>
+									<p class="card-text card-text--games">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+									<i class="bi bi-star-fill"></i>
+									<i class="bi bi-star-fill"></i>
+									<i class="bi bi-star-fill"></i>
+									<i class="bi bi-star"></i>
+									<i class="bi bi-star"></i>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-sm-12 col-md-3 col-lg-3">
+							<div class="card card--games m-4">
+								<img src="img/Games/Game4.png" class="card-img-top" alt="Game4">
+								<div class="card-body card-body--games">
+									<h4>$85.89</h4>
+									<h6>Lorem ipsum dolor sit amet</h6>
+									<p class="card-text card-text--games">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+									<i class="bi bi-star-fill"></i>
+									<i class="bi bi-star-fill"></i>
+									<i class="bi bi-star-fill"></i>
+									<i class="bi bi-star"></i>
+									<i class="bi bi-star"></i>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<!-- end of .games__cards -->
+
+				</div>
+				<!-- end of .row -->
+			</section>
+				
+		</div>
+		<!-- end of .container -->
+			
+			<div class="container">
+				<section class="row mx-4 news">
+					<h5>Latest news</h5>
+						<div class="col-sm-12 col-md-4 col-lg-4 card card--news">
+							<img src="img/News/News1.png" class="card-img-top" alt="News1">
+							<div class="card-body card-body--news">
+								<h6>Lorem ipsum dolor sit amet.</h6>
+								<p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, voluptates. Laboriosam quae laudantium quam excepturi at repellendus repellat voluptas ab</p>
+								<small><i class="bi bi-clock"></i>2014-10-15 09:46:34</small>
+							</div>
+						</div>
+						<div class="col-sm-12 col-md-4 col-lg-4 card card--news">
+							<img src="img/News/News2.png" class="card-img-top" alt="News2">
+							<div class="card-body card-body--news">
+								<h6>Lorem ipsum dolor sit amet.</h6>
+								<p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, voluptates. Laboriosam quae laudantium quam excepturi at repellendus repellat voluptas ab</p>
+								<small><i class="bi bi-clock"></i>2014-10-15 09:46:34</small>
+							</div>
+						</div>
+						<div class="col-sm-12 col-md-4 col-lg-4 card card--news">
+							<img src="img/News/News3.png" class="card-img-top" alt="News3">
+							<div class="card-body card-body--news">
+								<h6>Lorem ipsum dolor sit amet.</h6>
+								<p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, voluptates. Laboriosam quae laudantium quam excepturi at repellendus repellat voluptas ab</p>
+								<small><i class="bi bi-clock"></i>2014-10-15 09:46:34</small>
+							</div>
+						</div>
+					
+				</section>
+			</div>
+	</main>
+	
+	
+	
+	<footer>
+		<div class="container">
+			<div class="row footer-columns py-4">
+				<div class="col-12 col-md-2 flex-column footer__column py-2 ">
+					<h5 class="mb-2">Information</h5>
+					<nav class="nav">
+						<a class="nav-link active" aria-current="page" href="#">Specials</a>
+						<a class="nav-link" href="#">New products</a>
+						<a class="nav-link" href="#">Top sellers</a>
+						<a class="nav-link" href="#">Our stores</a>
+						<a class="nav-link" href="#">Contact us</a>
+						<a class="nav-link" href="#">Pages configuration</a>
+						<a class="nav-link" href="#">Sitemap</a>
+					</nav>
+				</div>
+
+				<div class="col-12 col-md-2 flex-column footer__column py-2 ">
+					<h5 class="mb-2">My account</h5>
+					<nav class="nav">
+						<a class="nav-link" href="#">My orders</a>
+						<a class="nav-link" href="#">My merchandise returns</a>
+						<a class="nav-link" href="#">My credit ships</a>
+						<a class="nav-link" href="#">My addresses</a>
+						<a class="nav-link" href="#">My personal info</a>
+						<a class="nav-link" href="#">My vouchers</a>
+					</nav>
+				</div>
+
+				<div class="col-12 col-md-2 flex-column footer__column py-2 ">
+					<h5 class="mb-2">Categories</h5>
+					<nav class="nav">
+						<a class="nav-link" href="#">Accessories</a>
+						<a class="nav-link" href="#">Games</a>
+						<a class="nav-link" href="#">Gadgets</a>
+						<a class="nav-link" href="#">Hardware</a>
+					</nav>
+				</div>
+
+				<div class="col-12 col-md-2 flex-column footer__column py-2 ">
+					<h5 class="mb-2">Follow us</h5>
+					<nav class="nav">
+						<a class="nav-link" href="#"><i class="bi bi-facebook"></i>Facebook</a>
+						<a class="nav-link" href="#"><i class="bi bi-twitter"></i>Twitter</a>
+						<a class="nav-link" href="#"><i class="bi bi-google"></i>Google plus</a>
+					</nav>
+				</div>
+
+				<div class="col-12 col-md-4 flex-column footer__column py-2 ">
+					<h5 class="mb-2">Newsletter</h5>
+					<nav class="nav">
+						<div class="input-group">
+							<input type="email" class="form-control" placeholder="Enter your e-mail" aria-label="Email" aria-describedby="button-addon2">
+							<button action="submit" class="btn btn-outline-secondary btn-outline-secondary--accent" type="button" id="button-addon2"></button>
+						</div>
+					</nav>
+					<div class="contacts">
+						<p><i class="bi bi-house"></i>My company, 4578 Marmara Road, Glasgow, 004 89GR</p>
+						<p><i class="bi bi-telephone"></i>800-2345-6789</p>
+						<p><i class="bi bi-envelope"></i>info@examledomain.com</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="row footer-copyright">
+				<p>&#169 2022 Ecommerce software by PrestoShop</p>
+			</div>
+			
+		</div>
+	</footer>
+	
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
