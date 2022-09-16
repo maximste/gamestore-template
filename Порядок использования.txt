@@ -1,0 +1,17 @@
+Для новго проекта требуются:
+/app
+.bowerrc
+.gitignore
+gulpfile.js
+package.json
+
+Запуск новго проекта:
+$ npm i
+$ gulp
+
+Ошибка в модуле gulp-imagemin
+Error: spawn ../node_modules/optipng-bin/vendor/optipng ENOENT
+решена таким образом:
+
+npm install --save-dev imagemin imagemin-cli
+npm rebuild
